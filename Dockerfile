@@ -1,7 +1,7 @@
 FROM alpine:latest
 
 # Install openssh dan bash
-RUN apk add --no-cache openssh bash
+RUN apk add --no-cache openssh-server bash
 
 # Buat folder runtime SSH
 RUN mkdir -p /var/run/sshd
